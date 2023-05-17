@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
 import { GoogleLoginButton } from "react-social-login-buttons";
 import { LoginSocialGoogle } from "reactjs-social-login";
-import UserManagement from '../../Axios/UserManagement'
+import UserManagement from '../Axios/UserManagement'
 
 function Testt() {
     const [inputs, setInputs] = useState({});
