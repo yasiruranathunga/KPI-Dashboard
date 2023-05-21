@@ -148,7 +148,7 @@ function Register() {
 
 
 
-                                    <input type="submit" className='btn btn-primary btn-user btn-block' value=" Register Account" />
+                                    <input type="submit" className='btn btn-outline-primary' value=" Register Account" />
 
                                 </form>
                                 <hr />
