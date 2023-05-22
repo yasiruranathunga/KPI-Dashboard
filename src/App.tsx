@@ -6,18 +6,21 @@ import { Delinquency } from "./components/Delinquency";
 import { Retention } from "./components/Retention";
 import { LeaseFileAudit } from "./components/LeaseFileAudit";
 import {Routes , Route} from 'react-router-dom';
-import Testt from "./components/Testt";
+
 import { ExampleTree } from "./components/OrganizationalChart";
-import Register from "./components/Register";
+
+import SignIn from "./components/Auth/Signin";
+import SignUp from "./components/Auth/Signup";
 function App() {
   return (
 
     <Routes>
-       <Route path='/' element={<Testt/>} />
+       
+       <Route path='/' element={<SignIn/>} />
+       <Route path='/register' element={<SignUp/>} />
        <Route path='/Organization_Chart' element={<ExampleTree/>} />
-       <Route path='/register' element={<Register/>} />
-      <Route path='/dash' element={<div className="container">
-      <div className="py-8 md:py-[74px] gap-[18px] h-screen grid lg:grid-rows-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
+       <Route path='/dash' element={<div className="container">
+       <div className="py-8 md:py-[74px] gap-[18px] h-screen grid lg:grid-rows-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5">
         
         <Occupancy />  
         <Delinquency />
